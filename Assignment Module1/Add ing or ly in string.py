@@ -1,10 +1,12 @@
 
 word = input("Enter a word: ")
+length = len(word)
 
-if word:
-     print (word+"ing")
-if word.endswith ("ing"):
-    print (word+"ly")
+if length < 3:
+     print ("More than 3 letters")
+elif word.endswith ("ing"):
+    word += "ly"
 else:
-    print("error")        
+    word += "ing"        
     
+print (word)        
