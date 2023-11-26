@@ -1,6 +1,10 @@
-n1 = int(input("Enter a Number: "))
-n2 = int(input("Enter a Number: "))
+n = int(input("Enter a Number: "))
 
-sum = n1 + n2 
+sum = 0
+i = 1
+
+while i <= n:
+    sum += i
+    i += 1 
 
 print (sum)
